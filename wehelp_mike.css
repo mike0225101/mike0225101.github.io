@@ -1,0 +1,123 @@
+/* frequently used color*/
+:root {
+    --primary-red: #cc0000;
+    --dark-gray: #555555;
+    --mid-gray: #f4f4f4f4;
+    --light-gray: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* fixed in the boarder*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+
+    background-color: white;
+    position:fixed;
+    width: 100%;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+.header_logo {
+    display: flex;
+}
+
+/* Content List Styles */
+.content_list {
+    display:flex;
+    justify-content:flex-start;
+
+    background-color: var(--primary-red);
+    padding-top: 70px;
+    width: 100%;
+}
+
+.content_list_item {
+    color:var(--light-gray);
+    width: 15%;
+    margin-right:10px;
+    margin-left:10px;
+    text-align: center;
+}
+
+/* Content Styles */
+.content_odd, .content_even{
+    padding: 2rem;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.content_odd {
+    background-color: var(--mid-gray);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.content_even {
+    background-color: white;
+    border: 3px dashed var(--dark-gray);
+}
+
+.content_title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    font-size: 16px;
+    padding: 8px;
+}
+
+/* Bottom Banner Styles*/
+.bottom_banner {
+    display:flex;
+    justify-content:flex-start;
+
+    margin-bottom: 0;
+    background-color: var(--dark-gray);
+    background-size: cover;
+    padding: 3rem 2rem;
+
+    color: var(--light-gray);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .header {
+        font-size: 34.5px;
+        padding-left: 35px;
+    }
+
+    .header_logo{
+        display:none;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        font-size: 27px;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+}
